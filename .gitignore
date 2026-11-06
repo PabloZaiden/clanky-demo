@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.devbox/
+.clanky-worktrees/
+.clanky-planning/
+.DS_Store

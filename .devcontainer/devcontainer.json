@@ -1,0 +1,14 @@
+{
+  "name": "Daybreak Coffee",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Daybreak Coffee",
+      "onAutoForward": "silent"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fcf8f0" />
+    <meta name="description" content="Daybreak Coffee: a small, friendly cafe menu and a hands-on Clanky demo." />
+    <title>Daybreak Coffee</title>
+    <link rel="icon" href="./assets/espresso.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./menu.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Skip to the menu</a>
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Daybreak Coffee home">
+          <span class="brand-mark" aria-hidden="true">d.</span>
+          <span>daybreak<span class="brand-caption">COFFEE &amp; GOOD COMPANY</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#menu">Our menu</a>
+          <a href="#visit">Find us</a>
+          <a class="nav-cta" href="#menu">Find your cup <span aria-hidden="true">&nearr;</span></a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A LITTLE DAILY RITUAL</p>
+            <h1 id="hero-title">A good day<br />starts with<br /><span>good coffee.</span></h1>
+            <p class="hero-description">Thoughtfully brewed. Always welcoming. Find your favorite cup and take a little time for yourself.</p>
+            <a class="button" href="#menu">Explore the menu <span aria-hidden="true">&rarr;</span></a>
+            <p class="hero-note">Small batches. Big smiles. Every day.</p>
+          </div>
+          <div class="hero-art">
+            <img src="./assets/daybreak.svg" alt="An original illustration of a steaming coffee cup in the morning sun" width="600" height="500" />
+            <span class="art-caption">a bright start, one cup at a time</span>
+          </div>
+        </section>
+
+        <section id="menu" class="menu-section" aria-labelledby="menu-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">YOUR NEXT FAVORITE</p>
+              <h2 id="menu-title">Good things, freshly brewed.</h2>
+            </div>
+            <p id="menu-count" class="menu-count" aria-live="polite"></p>
+          </div>
+          <div id="menu-list" class="menu-grid"></div>
+          <noscript><p>Enable JavaScript to see the coffee menu.</p></noscript>
+        </section>
+
+        <footer id="visit" class="site-footer">
+          <p>Make yourself at home.</p>
+          <p>Open daily &middot; 7 am &ndash; 4 pm</p>
+          <span>Daybreak is a fictional cafe built for the Clanky demo.</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

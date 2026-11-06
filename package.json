@@ -1,0 +1,11 @@
+{
+  "name": "clanky-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot server.ts",
+    "start": "NODE_ENV=production bun server.ts",
+    "build": "bun build --compile server.ts --outfile dist/daybreak"
+  }
+}
